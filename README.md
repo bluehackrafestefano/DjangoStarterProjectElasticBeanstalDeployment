@@ -1,5 +1,10 @@
 ### This project creates a Django project from scratch and deploy to AWS Elastic Beanstalk environment
 ### Local ops
+- Install required packages
+```bash
+pip install virtualenv awsebcli
+# pip install pillow psycopg2
+```
 - Create a working directory:
 ```bash
 mkdir django
