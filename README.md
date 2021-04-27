@@ -81,3 +81,16 @@ eb terminate django-env
 rm -rf ~/eb-virt
 rm -rf ~/ebdjango
 ```
+### Security
+- Create .env file under main project directory
+- Add secret key:
+```bash
+SECRET_KEY=j^$&...
+```
+- Add .env to .gitignore
+- Modify settings.py
+```bash
+from decouple import config
+SECRET_KEY = config('SECRET_KEY')
+from decouple import config
+```
