@@ -80,12 +80,6 @@ option_settings:
 ```bash
 eb deploy
 ```
-### Terminate the project
-```bash
-eb terminate django-env
-rm -rf ~/eb-virt
-rm -rf ~/ebdjango
-```
 ### Security
 - Create .env file under main project directory
 - Add secret key:
@@ -98,4 +92,10 @@ SECRET_KEY=j^$&...
 from decouple import config
 SECRET_KEY = config('SECRET_KEY')
 from decouple import config
+```
+### Terminate the project
+```bash
+eb terminate django-env
+rm -rf ~/eb-virt
+rm -rf ~/ebdjango
 ```
